@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task Manager</title>
+	<link href="css/index.css" rel="stylesheet"/>
+	
+</head>
+<body>
+	<header>
+		<span>Task Manager</span>
+	</header>
+	<div id="tasksBlock" class="FL">
+		<p class="infoText">Type the name of the list and click add a list Button</p>
+	</div>
+	<div id="addTaskForm">
+		<h2 class="headingAddTask">Add a list</h2>
+		<input type="text" placeholder="enter name of the list" />
+		<button onclick="addList(event);">Add a list</button>
+	</div>
+	
+
+
+
+
+	<div class="FL taskTemp addTaskTemplate" style="display:none;">
+		<textarea placeholder="add some task"></textarea>
+		<button onclick="addTask(event);">Add</button>
+	</div>
+	<div class="task" draggable="true" ondragstart="return dragStart(event);" style="display:none;">
+		<p class="para eachTask"></p>
+		<button onclick="removeTask(event);">X</button>
+		<button onclick="editTask(event);">edit</button>
+		
+	</div>
+	<div class="editTemp addTaskTemplate FL" style="clear:both;display:none;">
+		<textarea placeholder="edit task" class="FL editTask"></textarea>
+		<button onclick="modifyTask(event);">OK</button>
+	</div>
+	<div class="taskBlock FL" style="display:none;" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)"     ondragover="return dragOver(event)">
+		<button id="addTask" onclick="writeTaskTemp(event);" class="cp">Add a Task ...</button>
+		<span></span>
+	</div>
+
+	<script src="js/index.js"></script>
+</body>
+</html>

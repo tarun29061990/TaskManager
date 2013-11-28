@@ -1,0 +1,122 @@
+*{
+	font-family: sans-serif;
+}
+p,body{
+	margin:0;
+}
+
+textarea{
+	resize:vertical;
+}
+
+button{
+	background: green;
+	color: white;
+	border: none;
+	padding:6px;
+	cursor:pointer;
+}
+
+header{
+	height: 30px;
+	background: green;
+	color: white;
+	padding: 10px;
+	font-size: 27px;
+}
+
+#tasksBlock{
+	overflow: hidden;
+	width:80%;
+	margin-top: 19px;
+	border: 2px solid #2C3E50;
+	padding-top: 15px;
+	border-radius: 19px;
+	-webkit-border-radius: 19px;
+	-moz-border-radius: 19px;
+	-o-border-radius: 19px;
+	
+}
+
+.infoText{
+	text-align: center;
+	font-weight: bold;
+	padding: 9px;
+	margin: 0 0 10px 319px;
+	background: #F9EDBE;
+	width: 468px;
+	height: 14px;
+}
+
+#addTaskForm{
+	float: right;
+	position: fixed;
+	top: 50%;
+	left: 84%;
+	padding: 20px;
+	border: 2px solid #2C3E50;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+
+}
+
+#addTaskForm h2{
+	margin: 0;
+	font-size: 18px;
+	margin: 0 0 21px 28px;
+}
+
+#addTaskForm button{
+	display: block;
+	margin: 20px 0 0 41px;
+}
+
+.taskBlockNew{
+	height: 300px;
+	width: 300px;
+	border: 1px solid #2C3E50;
+	margin: 0 0 21px 20px;
+	overflow: scroll;
+	padding: 11px;
+}
+.taskBlockNew span{
+	font-weight:bold;
+}
+
+.FL{
+	float:left;
+}
+
+.cp{
+	cursor:pointer;
+}
+
+#addTaskTemplate textarea{
+	resize: vertical;
+	height: 100px;
+	width: 299px;
+	margin: 2px;
+}
+
+#addTaskTemplate button{
+	display:block;
+}
+
+.taskNew{
+	overflow: hidden;
+	border:1px solid #2C3E50;
+}
+
+.taskNew button{
+	float: right;
+}
+.eachTask{
+	
+	float:left;
+	padding:13px;
+	font-size:14px;
+	word-wrap: break-word;
+	width:195px;
+}
